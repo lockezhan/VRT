@@ -1,0 +1,13 @@
+Package: amd-vrt
+Version: 1.0.0
+Architecture: amd64
+Maintainer: AMD <support@amd.com>
+Depends: libxml2, libzmq3-dev, libjsoncpp-dev
+Section: utils
+Priority: optional
+Homepage: https://www.amd.com/
+Description: AMD V80 Runtime API, SMI and PCIe driver package
+ This package includes:
+ * VRT API - Runtime API for AMD V80 acceleration
+ * SMI CLI - System Management Interface command-line utility
+ * PCIe hotplug driver - Driver for PCIe hotplug functionality

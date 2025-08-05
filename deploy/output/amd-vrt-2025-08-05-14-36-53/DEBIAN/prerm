@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+# Unload the PCIe hotplug driver if loaded
+if lsmod | grep -q "pcie_hotplug"; then
+    echo "Unloading pcie_hotplug module..."
+    rmmod pcie_hotplug || echo "Warning: Failed to unload pcie_hotplug module"
+fi
+
+exit 0
